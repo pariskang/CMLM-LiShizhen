@@ -59,7 +59,7 @@ clone_or_update https://github.com/OpenDCAI/Paper2Any "$CODE_DIR/paper2any"
 
 # Build llama.cpp (GPU build when CUDA is available)
 pushd "$CODE_DIR/llama.cpp" >/dev/null
-cmake -B build -DLLAMA_CUBLAS=ON
+cmake -B build -DGGML_CUDA=ON
 cmake --build build -j"$(nproc)"
 popd >/dev/null
 

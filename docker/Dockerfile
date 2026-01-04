@@ -35,7 +35,7 @@ RUN git clone https://github.com/limaoyi1/Auto-PPT /opt/auto-ppt && \
     git clone https://github.com/OpenDCAI/Paper2Any /opt/paper2any
 
 # Build llama.cpp
-RUN cmake -S /opt/llama.cpp -B /opt/llama.cpp/build -DLLAMA_CUBLAS=ON && \
+RUN cmake -S /opt/llama.cpp -B /opt/llama.cpp/build -DGGML_CUDA=ON && \
     cmake --build /opt/llama.cpp/build -j$(nproc)
 
 # Install editable packages
