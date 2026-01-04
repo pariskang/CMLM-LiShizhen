@@ -8,3 +8,7 @@ Our second Chinese Medicine Language Model (CMLM-LiShizhen) aims to possess a hi
 This project is jointly guided by Professor Zhang Wenqiang from Fudan University and Professor Wang Haofen from Tongji University. It is completed by Kang Yanlan, Chang Yang, and Fu Jiyuan, members of the [ROI Lab](https://www.fudanroilab.com/) at Fudan University.
 ## 团队介绍
 本项目由复旦大学张文强教授和同济大学王昊奋教授共同指导，由复旦大学[ROI Lab](https://www.fudanroilab.com/)成员康砚澜、常扬、符纪元通力协作完成。
+
+## Deployment helper (Colab & Docker)
+
+See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for a ready-to-use Colab bootstrap script, Dockerfile, and model download helper that integrate LangChain/LangGraph, Auto-PPT, DB-GPT, SGLang, LLaMA-Factory, llama.cpp, DeepSpeed, Unsloth, and Paper2Any alongside large checkpoint prefetching via `huggingface_hub`.
